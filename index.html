@@ -542,10 +542,10 @@
             }).then((result) => {
                 if (result.isConfirmed) {
                     if (dispositivo === 'pc') {
-                        const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=soporte@neumann.edu.pe&su=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpoCorreo)}`;
+                        const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=soporte@empresa.edu.pe&su=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpoCorreo)}`;
                         window.open(gmailLink, '_blank');
                     } else {
-                        const mailtoLink = `mailto:soporte@neumann.edu.pe?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpoCorreo)}`;
+                        const mailtoLink = `mailto:soporte@empresa.edu.pe?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpoCorreo)}`;
                         window.location.href = mailtoLink;
                     }
                 }
